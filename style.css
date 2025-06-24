@@ -183,7 +183,7 @@ h3{
 }
 
 @media screen and (max-height: 300px) {
-    .weather-app {
+    .weather-site {
         min-height: 30em;
     }
 }
