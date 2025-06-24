@@ -68,7 +68,8 @@ function dayOfTheWeek(day, month, year) {
 
 function fetchWeatherData() {
 
-    fetch(`http://api.weatherapi.com/v1/current.json?key=api_key&q=${cityInput}`).then(response => response.json()).then(data => {
+    fetch(`/.netlify/functions/getWeather?city=${cityInput}`).then(response => response.json()).then(data => {
+    // fetch(`http://api.weatherapi.com/v1/current.json?key=api_key&q=${cityInput}`).then(response => response.json()).then(data => {
         console.log(data);
 
         temp.innerHTML = data.current.temp_c + "&#176;";
