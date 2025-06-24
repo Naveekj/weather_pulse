@@ -167,3 +167,23 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
+
+@media screen and (max-width: 800px) {
+    .side_panel, .container {
+        position: relative;
+        width: 100%;
+        top: initial;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .weather-app {
+        min-height: 30em;
+    }
+}
