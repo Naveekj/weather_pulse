@@ -178,6 +178,9 @@ h3{
 
 @media screen and (max-width: 600px) {
     html {
+        font-size: 14px;
+    }
+    .container{
         font-size: 10px;
     }
 }
